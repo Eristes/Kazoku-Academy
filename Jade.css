@@ -1,0 +1,118 @@
+* {
+		background-color: #FFB6C1;
+	}
+
+	h1 {
+	text-align: center;
+	color: blueviolet;
+	} 
+
+	h2 {
+		text-align: center;
+		color: deeppink;
+	}
+
+	div{
+		color: deeppink;
+		text-align: center;
+		font-size: 150%;
+	}
+	.div2 {
+	margin-left: 150px;
+	text-align: left;
+	font-weight: 600;
+	font-size: 20px;
+	}
+	p {
+		text-align: center;
+		font-weight: 600;
+		font-size: 20px;
+		color: deeppink;
+	}
+/** **/
+.dropbtn {
+  background-color: #FFB6C1;
+  color: deeppink;
+  padding: 20px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: deeppink;
+  color: #FFB6C1;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #c65102;
+  min-width: 230px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+  padding: none;
+}
+
+.dropdown-content a {
+  color: deeppink;
+  padding: 12px 12px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+/* Centered text */
+.centered {
+	color: #000000;
+	font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.0)
+  
