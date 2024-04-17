@@ -88,13 +88,23 @@ function myFunction29() {
 function myFunction30() {
   document.getElementById("myDropdown30").classList.toggle("show");
 }
-
 function myFunction31() {
   document.getElementById("myDropdown31").classList.toggle("show");
 }
-
 function myFunction32() {
   document.getElementById("myDropdown32").classList.toggle("show");
+}
+function myFunction33() {
+  document.getElementById("myDropdown33").classList.toggle("show");
+}
+function myFunction34() {
+  document.getElementById("myDropdown34").classList.toggle("show");
+}
+function myFunction35() {
+  document.getElementById("myDropdown35").classList.toggle("show");
+}
+function myFunction36() {
+  document.getElementById("myDropdown36").classList.toggle("show");
 }
 
 
