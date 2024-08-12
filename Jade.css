@@ -1,19 +1,19 @@
 * {
-		background-color: #FFB6C1;
+		background-color: #9955BB;
 	}
 
 	h1 {
 	text-align: center;
-	color: blueviolet;
+	color: indigo;
 	} 
 
 	h2 {
 		text-align: center;
-		color: deeppink;
+		color: indigo;
 	}
 
 	div{
-		color: deeppink;
+		color: indigo;
 		text-align: center;
 		font-size: 150%;
 	}
@@ -27,12 +27,12 @@
 		text-align: center;
 		font-weight: 600;
 		font-size: 20px;
-		color: deeppink;
+		color: indigo;
 	}
 /** **/
 .dropbtn {
-  background-color: #FFB6C1;
-  color: deeppink;
+  background-color: #9955BB;
+  color: indigo;
   padding: 20px;
   font-size: 20px;
   border: none;
@@ -40,8 +40,8 @@
 }
 
 .dropbtn:hover, .dropbtn:focus {
-  background-color: deeppink;
-  color: #FFB6C1;
+  background-color: indigo;
+  color: #9955BB;
 }
 
 .dropdown {
@@ -61,7 +61,7 @@
 }
 
 .dropdown-content a {
-  color: deeppink;
+  color: indigo;
   padding: 12px 12px;
   text-decoration: none;
   display: block;
