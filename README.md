@@ -1,1 +1,1 @@
-This is Year 2 of the Kazoku Academy Project, there will be many changes in the coming weeks. # Kazoku-Academy
+This is Year 3 of the Kazoku Academy Project, New File schema being created with archives
