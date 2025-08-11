@@ -1,0 +1,35 @@
+Random tidbits to help with the coding
+
+<h1>Monday</h1>
+<h1>Tuesday</h1>
+<h1>Wednesday</h1>
+<h1>Thursday</h1>
+<h1>Friday</h1>
+
+	<div>
+    <br>
+    	<iframe width="840" height="473" src="https://www.youtube.com/embed/___________" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div><br>
+
+
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Videos</title>
+	<link rel="stylesheet" href="../Aramis.css">
+</head>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Videos</title>
+	<link rel="stylesheet" href="../Jade.css">
+</head>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Videos</title>
+<link rel="stylesheet" href="../Atticus.css">
+</head>
