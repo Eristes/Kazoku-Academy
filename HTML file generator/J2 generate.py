@@ -47,11 +47,7 @@ if video_id:
     	<iframe width="840" height="473" src="https://www.youtube.com/embed/{video_id3}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</div>
   <p> <a href="https://www.youtube.com/watch?v={video_id3}"> Direct link to video </a><br><br>
-	<div>Computer
-    <br>
-    	<iframe width="840" height="473" src="https://www.youtube.com/embed/{video_id4}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	</div><br>
-  <p> <a href="https://www.youtube.com/watch?v={video_id4}"> Direct link to video </a><br><br>
+
        
 	<section><a style="font-weight:bold" href="index.html"
 target="_self" title="Click Here!" font-weight=bold>Back to Home!</a> </section>
