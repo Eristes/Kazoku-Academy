@@ -43,7 +43,7 @@ if video_id:
 	</div><br>
   <p> <a href="https://www.youtube.com/watch?v={video_id2}"> Direct link to video </a><br><br>
        
-	<section><a style="font-weight:bold" href="index.html"
+	<section><a style="font-weight:bold" href="../index.html"
 target="_self" title="Click Here!" font-weight=bold>Back to Home!</a> </section>
 	</div><br>
 </html>
