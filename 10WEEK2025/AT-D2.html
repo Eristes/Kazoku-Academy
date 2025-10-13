@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Videos - Dragon Ball Theme</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to bottom, #1e3c72, #2a5298, #f7b733, #fc4a1a);
+        color: #fff;
+        text-align: center;
+        overflow-x: hidden;
+        position: relative;
+    }
+    h1 {
+        font-size: 3em;
+        margin-top: 20px;
+        text-shadow: 3px 3px 5px #000;
+    }
+    h2 {
+        color: #00bfff;
+        text-shadow: 2px 2px 4px #000;
+    }
+    .video-section {
+        margin: 30px auto;
+        width: 90%;
+        max-width: 900px;
+        padding: 20px;
+        background: rgba(0,0,0,0.3);
+        border-radius: 15px;
+        transition: transform 0.3s, box-shadow 0.3s;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+    }
+    .video-section:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 30px #ffdd00;
+    }
+    iframe {
+        border-radius: 10px;
+        box-shadow: 0 0 15px #000;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    iframe:hover {
+        transform: scale(1.02);
+        box-shadow: 0 0 25px #00ff00;
+    }
+    .logo {
+    width: 120px;
+    position: fixed; /* fixed on screen */
+    top: 20px;       /* distance from top */
+    left: 20px;      /* distance from left */
+    z-index: 10;     /* above content */
+    }
+    a {
+        color: #ffeb3b;
+        font-weight: bold;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+    a:hover {
+        color: #00ff00;
+    }
+    /* Floating Dragon Balls */
+    .dragonball {
+        position: absolute;
+        width: 50px;
+        cursor: pointer;
+        transition: transform 0.3s, opacity 0.3s;
+        z-index: 2;
+    }
+    .dragonball:hover {
+        transform: scale(1.2);
+    }
+    /* Shenron */
+    .shenron {
+        position: fixed;
+        top: 20%; /* moved closer to the top */
+        left: 50%;
+        width: 600px;
+        transform: translate(-50%);
+        opacity: 0;
+        z-index: 5;
+        transition: opacity 2s;
+        pointer-events: none;
+    }
+    .shenron.visible {
+        opacity: 1;
+    }
+</style>
+</head>
+<body>
+<img class="logo" src="../images/symbol.jpg" alt="Goku enlightenment wu">
+<h1>Tuesday</h1>
+<h2 style="color: orange;">Happy Birthday Atticus!!</h2>
+
+<div class="video-section">
+    <h3>Reading</h3>
+    <iframe width="840" height="473" src="https://www.youtube.com/embed/-MlFaotVS7s" 
+    title="YouTube video player" allowfullscreen></iframe>
+    <p><a href="https://www.youtube.com/watch?v=-MlFaotVS7s">Direct link to video</a></p>
+</div>
+
+<div class="video-section">
+    <h3>Geography</h3>
+    <iframe width="840" height="473" src="https://www.youtube.com/embed/VchKWNgvYns" 
+    title="YouTube video player" allowfullscreen></iframe>
+    <p><a href="https://www.youtube.com/watch?v=VchKWNgvYns">Direct link to video</a></p>
+</div>
+
+<div class="video-section">
+    <h3>Music</h3>
+    <iframe width="840" height="473" src="https://www.youtube.com/embed/DzqLnv4BQgo" 
+    title="YouTube video player" allowfullscreen></iframe>
+    <p><a href="https://www.youtube.com/watch?v=DzqLnv4BQgo">Direct link to video</a></p>
+</div>
+
+<section><a href="../index.html" target="_self">Back to Home!</a></section>
+
+<img id="shenron" class="shenron" src="../images/shenron.jpg" alt="Shenron appears!">
+
+<script>
+// Dragon Balls images
+const dragonballImages = [
+    '../images/1star.jpg',
+    '../images/2star.jpg',
+    '../images/3star.jpg',
+    '../images/4star.jpg',
+    '../images/5star.jpg',
+    '../images/6star.jpg',
+    '../images/7star.jpg'
+];
+
+let collectedCount = 0;
+
+// Create floating dragon balls on right side
+dragonballImages.forEach(src => {
+    const db = document.createElement('img');
+    db.src = src;
+    db.classList.add('dragonball');
+    db.style.left = (window.innerWidth * 0.75 + Math.random() * window.innerWidth * 0.2) + 'px';
+    db.style.top = (50 + Math.random() * (window.innerHeight - 100)) + 'px';
+    db.style.animation = `floatDB ${2 + Math.random() * 3}s ease-in-out infinite alternate`;
+    db.addEventListener('click', () => {
+        db.style.display = 'none';
+        collectedCount++;
+        if(collectedCount === dragonballImages.length){
+            const shenron = document.getElementById('shenron');
+            shenron.classList.add('visible');
+            // Fade out after 5 seconds
+            setTimeout(() => {
+                shenron.classList.remove('visible');
+            }, 5000);
+        }
+    });
+    document.body.appendChild(db);
+});
+
+// Dragon Balls floating keyframes
+const style = document.createElement('style');
+style.innerHTML = `
+@keyframes floatDB {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}`;
+document.head.appendChild(style);
+</script>
+</body>
+</html>
