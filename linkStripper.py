@@ -12,6 +12,9 @@ def linkStripper(file_path):
         elif "https://www.youtube.com/shorts/" in line:
             video_id = line.split("https://www.youtube.com/shorts/")[1][:11]
             links.append(video_id)
+        elif "https://youtu.be/" in line:
+            video_id = line.split("https://youtu.be/")[1][:11]
+            links.append(video_id)
 
     links_text = "\n".join(links).strip()
     return links_text
