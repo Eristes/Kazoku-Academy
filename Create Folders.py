@@ -1,8 +1,8 @@
 import os
 
 # --- Configuration ---
-suffix = "WEEK2025"    # part after the number
-count = 30             # total folders
+suffix = "WEEK2026"    # part after the number
+count = 37             # total folders
 start = 1              # starting number
 parent_dir = "."       # "." = current directory
 
