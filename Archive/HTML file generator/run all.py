@@ -6,7 +6,12 @@ scripts = [
     'HTML file generator/A2 generate.py',
 	'HTML file generator/A3 generate.py',
     'HTML file generator/A4 generate.py',
-    'HTML file generator/A5 generate.py'
+    'HTML file generator/A5 generate.py',
+    'HTML file generator/J1 generate.py',
+	'HTML file generator/J2 generate.py',
+    'HTML file generator/J3 generate.py',
+	'HTML file generator/J4 generate.py',
+	'HTML file generator/J5 generate.py'
     
 ]
 

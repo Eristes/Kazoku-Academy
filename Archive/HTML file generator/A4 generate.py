@@ -8,10 +8,10 @@ def get_specific_line(file_path, line_number):
         return None
 
 file_path = "linkBlock.txt"
-line_number = 0
-line_number2 = 1
-line_number3 = 2 
-line_number4 = 0
+line_number = 21
+line_number2 = 22
+line_number3 = 23
+line_number4 = 0 
 video_id = get_specific_line(file_path, line_number)
 video_id2 = get_specific_line(file_path, line_number2)
 video_id3 = get_specific_line(file_path, line_number3)
@@ -25,36 +25,36 @@ if video_id:
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Videos</title>
-<link rel="stylesheet" href="../Atticus.css">
+	<link rel="stylesheet" href="../Atticus.css">
 </head>
 <body>
-<h1>Monday</h1>
+<h1>Thursday</h1>
 <br>
   <h2 align=center fontcolor=Blue>Hello Atticus, if you have questions about the video, please ask your teacher!</h2>
 <br> 
-	<div>Science
-    	<br>
+	<div>Reading
+    <br>
     	<iframe width="840" height="473" src="https://www.youtube.com/embed/{video_id}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</div>
-          <p><a href="https://www.youtube.com/watch?v={video_id}"> Direct link to video </a></p><br>
-	<div>PE
-		<br>
-		<iframe width="840" height="473" src="https://www.youtube.com/embed/{video_id2}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</div>
-          <p><a href="https://www.youtube.com/watch?v={video_id2}"> Direct link to video </a></p><br>
-    <div>ASL
-    	<br>
+	</div>
+  <p><a href="https://www.youtube.com/watch?v={video_id}"> Direct link to video </a></p><br>
+	<div>KS History
+    <br>
+    	<iframe width="840" height="473" src="https://www.youtube.com/embed/{video_id2}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+  <p><a href="https://www.youtube.com/watch?v={video_id2}"> Direct link to video </a></p><br>
+	<div>Music
+    <br>
     	<iframe width="840" height="473" src="https://www.youtube.com/embed/{video_id3}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</div>
-          <p><a href="https://www.youtube.com/watch?v={video_id3}"> Direct link to video </a></p><br>
-	       
+	</div>
+  <p><a href="https://www.youtube.com/watch?v={video_id3}"> Direct link to video </a></p><br>
+       
 	<section><a style="font-weight:bold" href="../index.html" target="_self" title="Click Here!" font-weight=bold>Back to Home!</a></section>
 
 </body>
 </html>
     """
     
-    with open("Auto-HTML/AT-D1.html", 'w') as html_file:
+    with open("Auto-HTML/AT-D4.html", 'w') as html_file:
         html_file.write(html_content)
 else:
     print("Invalid line number.")

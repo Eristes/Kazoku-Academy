@@ -8,9 +8,9 @@ def get_specific_line(file_path, line_number):
         return None
 
 file_path = "linkBlock.txt"
-line_number = 0
-line_number2 = 1
-line_number3 = 2 
+line_number = 3
+line_number2 = 4
+line_number3 = 5 
 line_number4 = 0
 video_id = get_specific_line(file_path, line_number)
 video_id2 = get_specific_line(file_path, line_number2)
@@ -42,7 +42,7 @@ if video_id:
 		<iframe width="840" height="473" src="https://www.youtube.com/embed/{video_id2}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
           <p><a href="https://www.youtube.com/watch?v={video_id2}"> Direct link to video </a></p><br>
-    <div>ASL
+    <div>Spanish
     	<br>
     	<iframe width="840" height="473" src="https://www.youtube.com/embed/{video_id3}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
