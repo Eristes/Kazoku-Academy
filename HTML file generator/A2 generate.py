@@ -1,4 +1,4 @@
-def get_specific_line(file_path, line_number):
+def get_specific_line(file_path: str, line_number: int) -> str | None:
     with open(file_path, 'r') as file:
         lines = file.readlines()
     

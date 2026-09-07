@@ -1,9 +1,9 @@
 
-def linkStripper(file_path):
+def linkStripper(file_path: str) -> str:
     with open(file_path, "r") as file:
         lines = file.readlines()
     
-    links = []
+    links: list[str] = []
     
     for line in lines:
         if "https://www.youtube.com/watch?v=" in line:
