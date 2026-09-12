@@ -6,7 +6,8 @@ def get_specific_line(file_path: str, line_number: int) -> str | None:
         return lines[line_number].strip()
     else:
         return None
-
+    
+weekCur = "06WEEK2026"
 file_path = "linkBlock.txt"
 line_number = 6  
 line_number2 = 7  
@@ -54,7 +55,7 @@ if video_id:
 </html>
     """
     
-    with open("Auto-HTML/AT-D3.html", 'w') as html_file:
+    with open(f"{weekCur}/AT-D3.html", 'w') as html_file:
         html_file.write(html_content)
 else:
     print("Invalid line number.")
