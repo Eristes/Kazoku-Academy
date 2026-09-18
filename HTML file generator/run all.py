@@ -29,10 +29,12 @@ def move_atticus_comment(next_week: int):
         lines = html_file.readlines()
 
     marker_index = next(
-        (index for index, line in enumerate(lines)
-         if line.startswith('<!--  <div class="dropdown">')),
-        None
-    )
+    (
+        index for index, line in enumerate(lines)
+        if '<div class="dropdown">' in line and '<!--' in line
+    ),
+    None
+)
     button_text = f'>Week {next_week:02d}</button>'
     button_index = next(
         (index for index, line in enumerate(lines) if button_text in line),
