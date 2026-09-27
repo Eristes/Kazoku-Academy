@@ -7,7 +7,7 @@ def get_specific_line(file_path: str, line_number: int) -> str | None:
     else:
         return None
 
-weekCur = "07WEEK2026"
+weekCur = "08WEEK2026"
 file_path = "linkBlock.txt"
 line_number = 12 
 line_number2 = 13  
@@ -43,7 +43,7 @@ if video_id:
 		<iframe width="840" height="473" src="https://www.youtube.com/embed/{video_id2}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
           <p><a href="https://www.youtube.com/watch?v={video_id2}"> Direct link to video </a></p><br>
-    <div>Health
+    <div>Kids Meet
     	<br>
     	<iframe width="840" height="473" src="https://www.youtube.com/embed/{video_id3}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
