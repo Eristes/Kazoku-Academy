@@ -7,7 +7,7 @@ def get_specific_line(file_path: str, line_number: int) -> str | None:
     else:
         return None
     
-weekCur = "08WEEK2026"
+weekCur = "09WEEK2026"
 file_path = "linkBlock.txt"
 line_number = 6  
 line_number2 = 7  
